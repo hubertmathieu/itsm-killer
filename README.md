@@ -1,3 +1,3 @@
 # ITSM-LAB
 
-Killercoda lab exercise for the ITSM-Course.
+Killercoda lab exercise for the itsm course.
