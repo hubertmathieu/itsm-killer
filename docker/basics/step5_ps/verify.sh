@@ -1,3 +1,5 @@
 #!/bin/bash
 
-#docker run -it --rm --name hello-world alpine:latest "echo Hello World"
+step -e 
+
+docker inspect itsm_hello --format={{.Args}} > /dev/null 2>&1
