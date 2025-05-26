@@ -14,6 +14,12 @@
         "title": "Understanding image sources",
         "text": "step1_base_image/text.md",
         "verify": "step1_base_image/verify.sh"
+      },
+      {
+        "title": "Image layers",
+        "text": "step2_layers/text.md",
+        "verify": "step2_layers/verify.sh"
+      },
       }
     ],
     "finish": {
