@@ -20,6 +20,10 @@
         "text": "step2_layers/text.md",
         "verify": "step2_layers/verify.sh"
       },
+      {
+        "title": "Build new images",
+        "text": "step3_build/text.md",
+        "verify": "step3_build/verify.sh"
       }
     ],
     "finish": {
