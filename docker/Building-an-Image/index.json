@@ -11,9 +11,9 @@
     },
     "steps": [
       {
-        "title": "Running the first command",
-        "text": "step1_version/text.md",
-        "verify": "step1_version/verify.sh"
+        "title": "Understanding image sources",
+        "text": "step1_base_image/text.md",
+        "verify": "step1_base_image/verify.sh"
       }
     ],
     "finish": {

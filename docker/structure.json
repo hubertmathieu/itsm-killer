@@ -1,6 +1,6 @@
 {
   "title": "ITSM Docker",
-  "description": "This course gives a basic introduction about how to work with Docker. The verification will soon work!!",
+  "description": "This course gives a basic introduction about how to work with Docker.",
   "items": [
     { "path": "basics" },
     { "path": "Building-an-Image" }
