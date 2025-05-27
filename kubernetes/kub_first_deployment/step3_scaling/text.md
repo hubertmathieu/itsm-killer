@@ -48,7 +48,9 @@ Let's gather these IPs and run `curl` on it, so we can verify that our `nginx` i
 
 We grab the IPs with: 
 
-`export DIPS=$(kubectl get pods -o jsonpath='{.items[*].status.podIP}');echo $DIPS`{{exec}}
+`export DIPS=$(kubectl get pods -o jsonpath='{.items[*].status.podIP}');echo $DIPS > /tmp/ip-add.txt`{{exec}}
+
+`cat /tmp/ip-add.txt`{{exec}}
 
 Here, you see an alternative way of parsing the information. With `kubectl get pods -o json` we get the information as a type of `json`. Then, we can use `-o jsonpath=` to write a parsing syntax.
 You can find more details and examples in the [docs](https://kubernetes.io/docs/reference/kubectl/jsonpath/).

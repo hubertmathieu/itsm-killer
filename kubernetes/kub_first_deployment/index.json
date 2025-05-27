@@ -17,7 +17,8 @@
       },
       {
         "title": "Scale Deployment",
-        "text": "step3_scaling.md"
+        "text": "step3_scaling/text.md",
+        "verify": "step3_scaling/verify.sh"
       },
       {
         "title": "Delete Deployment",
