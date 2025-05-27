@@ -22,7 +22,8 @@
       },
       {
         "title": "Delete Deployment",
-        "text": "step4_delete.md"
+        "text": "step4_delete/text.md",
+        "verify": "step4_delete/verify.sh"
       }
     ],
     "finish": {
