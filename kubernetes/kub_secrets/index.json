@@ -23,7 +23,8 @@
       },
       {
         "title": "Edit Secrets",
-        "text": "step4_edit_secret.md"
+        "text": "step4_edit_secret/text.md",
+        "verify": "step4_edit_secret/verify.sh"
       },
       {
         "title": "Delete Secrets",
