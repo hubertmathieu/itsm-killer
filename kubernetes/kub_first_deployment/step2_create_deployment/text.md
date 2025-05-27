@@ -50,6 +50,10 @@ With our deployment running, we can now try to access our nginx web server. Let'
 
 With the IP, let's use curl to access the pod on port 80:
 
-`curl $DPIP`{{exec}}
+`curl $DPIP > /tmp/nginx_curl.txt`{{exec}}
+
+See the result from the file content with:
+
+`cat /tmp/nginx_curl.txt`{{exec}}
 
 We get the default page as a result. Later, we will see an easier method for parsing the information of `kubectl describe`. 

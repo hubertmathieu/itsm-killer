@@ -12,7 +12,8 @@
       },
       {
         "title": "Create Deployment",
-        "text": "step2_create_deployment.md"
+        "text": "step2_create_deployment/text.md",
+        "verify": "step2_create_deployment/verify.sh"
       },
       {
         "title": "Scale Deployment",
