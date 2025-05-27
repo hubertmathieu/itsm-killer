@@ -13,7 +13,8 @@
       },
       {
         "title": "Exposing the Deployment",
-        "text": "step2_exposing.md"
+        "text": "step2_exposing/text.md",
+        "verify": "step2_exposing/verify.sh"
       }
     ],
     "finish": {
