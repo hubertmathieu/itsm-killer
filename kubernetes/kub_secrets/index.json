@@ -18,7 +18,8 @@
       },
       {
         "title": "Retrieve Secrets",
-        "text": "step3_get_secret.md"
+        "text": "step3_get_secret/text.md",
+        "verify": "step3_get_secret/verify.sh"
       },
       {
         "title": "Edit Secrets",

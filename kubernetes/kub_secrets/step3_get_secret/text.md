@@ -19,13 +19,17 @@ The reason is, that we get presented with the base64 encoded string of our value
 
 We can use `jsonpath` and the additional program `base64` to decode the values and reveal the true sensitive data. 
 
-To reveal the `username`, we could use: 
+To decode the `username`, we could use: 
 
-`kubectl get secret app-file-creds -o jsonpath='{.data.username}' | base64 --decode`{{exec}}
+`{ kubectl get secret app-file-creds -o jsonpath='{.data.username}' | base64 --decode; echo; } >> /tmp/decoded.txt`{{exec}}
 
-To reveal the `password`, we could use: 
+To decode the `password`, we could use: 
 
-`kubectl get secret app-file-creds -o jsonpath='{.data.password}' | base64 --decode`{{exec}}
+`{ kubectl get secret app-file-creds -o jsonpath='{.data.password}' | base64 --decode; echo; } >> /tmp/decoded.txt`{{exec}}
+
+To reveal content:
+
+`cat /tmp/decoded.txt`{{exec}}
 
 
 ## Challenge
