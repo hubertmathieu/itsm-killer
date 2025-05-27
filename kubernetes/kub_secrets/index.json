@@ -28,7 +28,8 @@
       },
       {
         "title": "Delete Secrets",
-        "text": "step5_delete_secret.md"
+        "text": "step5_delete_secret/text.md",
+        "verify": "step5_delete_secret/verify.sh"
       }
     ],
     "finish": {
