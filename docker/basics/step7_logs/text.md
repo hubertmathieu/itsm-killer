@@ -10,8 +10,11 @@ Previously, we created a detached nginx container. Make sure the container is st
 
 Having the running container, we can check the logs with:
 `docker logs nginx_test`{{exec}}
+You should see the output from nginx that typically comes up, when starting the server.
 
-You should see the output from nginx that typically comes up, when starting the server. 
+Next, we can also keep a copy of the logs for later analysis by piping the output into a file:
+`docker logs nginx_test > /tmp/nginx_logs.txt 2>&1`{{exec}}
+You should see the output from nginx that were written in the file `/tmp/nginx_logs.txt` with: `cat /tmp/nginx_logs.txt`{{exec}}
 
 # docker exec
 Sometimes, we want to inspect certain files within the container. 
