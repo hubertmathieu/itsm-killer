@@ -20,7 +20,8 @@
       },
       {
         "title": "Applying YAML",
-        "text": "step4_ApplyFiles.md"
+        "text": "step4_ApplyFiles/text.md",
+        "verify": "step4_ApplyFiles/verify.sh"
       },
       {
         "title": "Changing Configuration",

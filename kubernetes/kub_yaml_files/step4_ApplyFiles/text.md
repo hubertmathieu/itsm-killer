@@ -67,6 +67,6 @@ Let's try to access our nginx webserver.
 
 `export SRVIP=$(kubectl get service/demo-proxy -o jsonpath='{.spec.clusterIP}');echo $SRVIP`{{exec}}
 
-`curl $SRVIP:8083`{{exec}}
+`curl $SRVIP:8083 | tee /tmp/demo-proxy.html`{{exec}}
 
 There we see the infamous nginx welcome page! Our rollout with *yaml* files succeeded.
