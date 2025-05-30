@@ -3,4 +3,5 @@
 set -e
 
 kubectl get service demo-proxy
-stat /tmp/demo-proxy.html
+
+kubectl get deployments/demo-deployment
