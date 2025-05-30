@@ -21,15 +21,10 @@ We can use `jsonpath` and the additional program `base64` to decode the values a
 
 To decode the `username`, we could use: 
 
-`{ kubectl get secret app-file-creds -o jsonpath='{.data.username}' | base64 --decode; echo; } >> /tmp/decoded.txt`{{exec}}
+`{ kubectl get secret app-file-creds -o jsonpath='{.data.username}' | base64 --decode; echo; }`{{exec}}
 
-To decode the `password`, we could use: 
-
-`{ kubectl get secret app-file-creds -o jsonpath='{.data.password}' | base64 --decode; echo; } >> /tmp/decoded.txt`{{exec}}
-
-To reveal content:
-
-`cat /tmp/decoded.txt`{{exec}}
+Try to get the username from `app-file-creds` and store it into `/tmp/appuser.txt`. 
+Store the password from `app-file-creds` into `/tmp/apppass.txt`
 
 
 ## Challenge
