@@ -2,9 +2,10 @@
 
 set -e
 
-IP_COUNT=$(cat /tmp/ip-add.txt | wc -w)
+available=$(kubectl get deployment "itsm-demo-deployment" \
+  -o jsonpath='{.status.availableReplicas}' 2>/dev/null)
 
-if [ $IP_COUNT -eq 3 ]; then
+if ((available > 1)); then
   exit 0
 else
   exit 1
