@@ -43,8 +43,6 @@ Getting the IP of our service:
 
 Calling our service:
 
-`curl $SRVIP:8080 > /tmp/webshop-srv.txt`{{exec}}
+`curl $SRVIP:8080`{{exec}}
 
-We should see the infamous nginx welcome page:
-
-`cat /tmp/webshop-srv.txt`{{exec}}
+We should see the infamous nginx welcome page.
